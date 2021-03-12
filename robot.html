@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Analisi </title>
+        <meta name="author" content="vincenzo froncillo">
+        <meta name="description" value="esercizio javascript">
+    </head>
+    <body>
+    <h1><strong> REQUISITI:</strong></h1>
+        <p>l'area da lavoro la imposto con coordinate: x:600, y:600</p>
+        <p> testa robot: la testa la creo con un quadrato con coordinate:x:250 y:120 l:120 </p>
+        <p>le antenne del robot le faccio con 2 linee con coordinate: prima linea: x1:260 y1:120 x2:260 y2:80 e seconda linea :x1:350 y1:120 x2:350 y2:80</p>
+        <p>gli occhi del roboto: li creo con 4 cerchi che varanno rispettivamente le seguenti coordinate:
+        primo occhio: cerchio1=x:280 y:150 d:25 cerchio2=x:340 y:150 d:25;
+        secondo occhio: cerchio1= x:280 y:150 d:15  cerchio2= x:340 y:150 d:15</p>
+        <p>la bocca del robot: la creo con un rettangolo con coordinate: x:273 y:190 b:80 h:26. 
+        Nella bocca creo anche dei "denti" utilizzando 2 linee con coordinate: linea1= x1:300 y1:190 x2:300 y2:215 e la linea2= x1:330 y1:190x2:330 y2:215 </p>
+        <p>il collo del robot: lo creo utilizzando un rettangolo con coordinate: x:300 y:240 b:26 h:28 </p>
+        <P>il corpo del robot: lo creo con un rettangolo che avrà come coordinate: x:243 y:263 b:140 h:188 </P>
+        <p>le braccia del robot le creo:
+        primo braccio: rettangolo1= x:153 y:280 b:90 h:25; rettangolo2= x:153 y:305 b:25 h:90; arcodicirconferenza: x:170 y:410 d:37 d:37 a1:90 a2:270;
+        secondo braccio: rettangolo1:x:383 y:280 b:90 h:25; rettangolo2= x:448 y:305 b:25 h:90; arcodicirconferenza: x:458 y:410 d:37 d:37 a1:160 a2:360.
+        </p>
+        <p>le gambe del robot: le creo con 2 rettangoli con coordinate: rettangolo1:x:260 y:451 b:25 h:120; rettangolo2: x:340 y:451 b:25 h:120; </p>
+        <p>i piedi del robot:li creo utilizzando 2 elissi con coordinate: ellisse1: x:272 y:570 larghezza:40 altezza:10; ellisse2: x:352 y:570 larghezza:40 altezza: 10. </p>
+        <h1> ECCO IL ROBOT</h1>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+        <style>
+            html, body { margin: 0; padding: 0; background-color: "red"}
+            canvas { display: block; }
+        </style>
+       <script>
+            
+              function setup() {
+            createCanvas(600, 600);
+}
+
+            function draw() {
+            background(20,90,80);
+            fill(100,100,150)
+            square(mouseX,mouseY,120)
+            
+            fill(0,0,0)
+            line(260,120,260,80)
+            
+            fill(0,0,0)
+            line(350,120,350,80)
+            
+            fill(255,255,255)
+            circle(mouseX+30,mouseY+40,25)
+            
+            fill(255,255,255)
+            circle(mouseX+80,mouseY+40,25)
+            
+            fill(0,0,0)
+            circle(mouseX+30,mouseY+40,15)
+            
+            fill(0,0,0)
+            circle(mouseX+80,mouseY+40,15)
+            
+            fill(255,255,255)
+            rect(mouseX+20,mouseY+70,80,26)
+            
+            fill(0,0,0)
+            line(300,190,300,215)
+            
+            fill(0,0,0)
+            line(330,190,330,215)
+            
+            fill(100,100,150)
+            rect(mouseX+46,mouseY+120,26,28)
+            
+            fill(100,100,150)
+            rect(mouseX-4,mouseY+147,140,188)
+            
+            
+            fill(100,100,150)
+            rect(mouseX-94,mouseY+165,90,25)
+            
+                
+            fill(100,100,150)
+            rect(mouseX-94,mouseY+190,25,90)
+            
+            fill(255,255,255)
+            arc(mouseX-80,mouseY+300,37,37,90,270)
+            
+            
+            fill(100,100,150)
+            rect(mouseX+136,mouseY+165,90,25)
+            
+                
+            fill(100,100,150)
+            rect(mouseX+202,mouseY+190,25,90)
+            
+            fill(255,255,255)
+            arc(mouseX+213,mouseY+300,37,37,160,360)
+            
+            fill(100,100,150)
+            rect(mouseX-0,mouseY+335,25,120)
+            
+            fill(100,100,150)
+            rect(mouseX+110,mouseY+335,25,120)
+            
+            fill(0,0,0)
+            ellipse(mouseX-0.01,mouseY+460,40,10)
+            
+            fill(0,0,0)
+            ellipse(mouseX+112,mouseY+460,40,10)
+            }
+        </script>
+    </body>
+</html>

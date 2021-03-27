@@ -6,21 +6,28 @@
      <title>ESERCIZIO INFORMATICA LABORATORIO</title>
      <meta name="author" content="vincenzo froncillo">
      <meta name="description" value="ESERCIZIO">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.6.0/dist/cyborg/bootstrap.css" integrity="sha256-btFslHdAhE0svMtcMDnKXzq71KHM+jf5GKsdyAU3lfU=" crossorigin="anonymous">
    </head>
          <body>
-            <h1>ESERCIZIO INFORMATICA LAB </h1>
+            <h1>OROLOGIO DIGITALE</h1>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
             <style>
                 html, body { margin: 0; padding: 0; background-color: "red"}
                 canvas { display: block; }
             </style>
+            <style>
+               h1 {
+                  color: rgb(168, 206, 206);
+               }
+            </style>
+
             <script>
                function setup(){
                   createCanvas(400, 400);
                   angleMode(DEGREES)
                }
                function draw(){
-                  background(120, 119,80);
+                  background(0, 0,0);
                   var h = new Date().getHours();
                   var m = new Date().getMinutes();
                   var s = new Date().getSeconds();

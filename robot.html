@@ -6,25 +6,52 @@
         <title> Analisi </title>
         <meta name="author" content="vincenzo froncillo">
         <meta name="description" value="esercizio javascript">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.6.0/dist/cyborg/bootstrap.css" integrity="sha256-btFslHdAhE0svMtcMDnKXzq71KHM+jf5GKsdyAU3lfU=" crossorigin="anonymous">
     </head>
     <body>
+     
+          <style>
+
+              h1 {
+                   color: lawngreen;
+              }
+          </style>
+
+
     <h1><strong> REQUISITI:</strong></h1>
-        <p>l'area da lavoro la imposto con coordinate: x:600, y:600</p>
-        <p> testa robot: la testa la creo con un quadrato con coordinate:x:250 y:120 l:120 </p>
-        <p>le antenne del robot le faccio con 2 linee con coordinate: prima linea: x1:260 y1:120 x2:260 y2:80 e seconda linea :x1:350 y1:120 x2:350 y2:80</p>
-        <p>gli occhi del roboto: li creo con 4 cerchi che varanno rispettivamente le seguenti coordinate:
-        primo occhio: cerchio1=x:280 y:150 d:25 cerchio2=x:340 y:150 d:25;
-        secondo occhio: cerchio1= x:280 y:150 d:15  cerchio2= x:340 y:150 d:15</p>
-        <p>la bocca del robot: la creo con un rettangolo con coordinate: x:273 y:190 b:80 h:26. 
-        Nella bocca creo anche dei "denti" utilizzando 2 linee con coordinate: linea1= x1:300 y1:190 x2:300 y2:215 e la linea2= x1:330 y1:190x2:330 y2:215 </p>
-        <p>il collo del robot: lo creo utilizzando un rettangolo con coordinate: x:300 y:240 b:26 h:28 </p>
-        <P>il corpo del robot: lo creo con un rettangolo che avrà come coordinate: x:243 y:263 b:140 h:188 </P>
-        <p>le braccia del robot le creo:
-        primo braccio: rettangolo1= x:153 y:280 b:90 h:25; rettangolo2= x:153 y:305 b:25 h:90; arcodicirconferenza: x:170 y:410 d:37 d:37 a1:90 a2:270;
-        secondo braccio: rettangolo1:x:383 y:280 b:90 h:25; rettangolo2= x:448 y:305 b:25 h:90; arcodicirconferenza: x:458 y:410 d:37 d:37 a1:160 a2:360.
+        <p><strong> <font color="orange">l'area da lavoro:</font></strong> la imposto con coordinate: x:600, y:600</p>
+        <p> <strong><font color="orange">la testa robot:</font></strong> la testa la creo con un quadrato con coordinate:x:mouseX y:mouseY l:120 </p>
+        <p><strong><font color="orange">le antenne del robot:</font></strong> le faccio con 2 linee con coordinate: prima linea: x1:260 y1:120 x2:260 y2:80 e seconda linea :x1:350 y1:120 x2:350 y2:80</p>
+        <p><strong><font color="orange">gli occhi del robot:</font></strong>li creo con 4 cerchi che varanno rispettivamente le seguenti coordinate:
+            <strong><font color="yellow">primo occhio:</font></strong>: 
+            cerchio1=x:mouseX+30 y: mouseY+40 d:25;
+            cerchio2= x:mouseX+80 y:mouseY+40 d:15
+            <strong><font color="yellow">secondo occhio:</font></strong>
+            cerchio1= x:mouseX+30 y:mouseY+40 d:15
+            cerchio2=x:mouseX+80 y:mouseY+40 d:25;  
         </p>
-        <p>le gambe del robot: le creo con 2 rettangoli con coordinate: rettangolo1:x:260 y:451 b:25 h:120; rettangolo2: x:340 y:451 b:25 h:120; </p>
-        <p>i piedi del robot:li creo utilizzando 2 elissi con coordinate: ellisse1: x:272 y:570 larghezza:40 altezza:10; ellisse2: x:352 y:570 larghezza:40 altezza: 10. </p>
+        <p><strong> <font color="orange">la bocca:</font></strong>: la creo con un rettangolo con coordinate: x:mouseX+20 y:mouseY+70 b:80 h:26. 
+        Nella bocca creo anche dei "denti" utilizzando 2 linee con coordinate: linea1= x1:300 y1:190 x2:300 y2:215 e la linea2= x1:330 y1:190x2:330 y2:215 </p>
+        <p><strong><font color="orange">il collo</font></strong> lo creo utilizzando un rettangolo con coordinate: x:mouseX+46 y:mouseY+120 b:26 h:28 </p>
+        <P><strong><font color="orange">il corpo</font></strong> lo creo con un rettangolo che avrà come coordinate: x:mousex-4 y:mouseY+147 b:140 h:188 </P>
+        <p> <font color="orange">le braccia le creo:</font>
+        <strong><font color="yellow">primo braccio:</font></strong> 
+            rettangolo1= x:mouseX-94 y:mouseY+165 b:90 h:25; 
+            rettangolo2= x:mouseX-94 y:mouseY+190 b:25 h:90; 
+            arcodicirconferenza: x:mouseX-80 y:mouseY+300, d:37 d:37 a1:90 a2:270;
+        <strong><font color="yellow">socondo braccio:</font></strong>
+            rettangolo1:x:mouseX+136 y:mouseY+165 b:90 h:25;
+            rettangolo2= x:mouseX+202 y:mouseY+190 b:25 h:90;
+            arcodicirconferenza: x:mouseX+213 y:mouseY+300 d:37 d:37 a1:160 a2:360.
+        </p>
+        <p><strong><font color="orange">le gambe</font></strong> le creo con 2 rettangoli con coordinate:
+            rettangolo1:x:mouseX-0 y:mouseY+335 b:25 h:120;
+            rettangolo2: x:mouseX+110 y:mouseY+335 b:25 h:120; 
+        </p>
+        <p><strong><font color="orange">i piedi:</font></strong> creo utilizzando 2 elissi con coordinate: 
+            ellisse1: x:mouseX-0.01 y:mouseY+460 larghezza:40 altezza:10;
+            ellisse2: x:mouseX+112 y:mouseY+460 larghezza:40 altezza: 10.
+        </p>
         <h1> ECCO IL ROBOT</h1>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
         <style>
@@ -110,5 +137,9 @@
             ellipse(mouseX+112,mouseY+460,40,10)
             }
         </script>
+       
+
+
+
     </body>
 </html>

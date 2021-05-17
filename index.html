@@ -9,12 +9,109 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.6.0/dist/cyborg/bootstrap.css" integrity="sha256-btFslHdAhE0svMtcMDnKXzq71KHM+jf5GKsdyAU3lfU=" crossorigin="anonymous">
     </head>
     <body>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+      <style>
+          html, body { margin: 0; padding: 0; background-color: "red"}
+          canvas { display: block; }
+      </style>
+
+      <script>
+        function setup() {
+        createCanvas(1280, 620);
+        }
+
+        function draw() {
+        background(240,255,255);
+
+        fill(173,216,230);
+        rect(20,50,250,80);
+        fill(0)
+        text("ITALIANO",120,80,250,80);
+        line(270,90,350,90);
+
+        fill(173,216,230);
+        rect(350,50,250,80);
+        fill(0)
+        text("MATEMATICA",420,80,250,80);
+        line(600,90,680,90);
+
+
+        fill(173,216,230);
+        rect(680,50,250,80);
+        fill(0);
+        text("INFORMATICA",750,80,250,80);
+        line(930,90,1000,90);
+
+        fill(173,216,230);
+        rect(1000,50,250,80);
+        fill(0)
+        text("INGLESE",1070,80,250,80);
+
+        // parte in basso
+
+
+        fill(173,216,230);
+        rect(20,520,250,80);
+        fill(0);
+        text("T.P.S",120,550,250,80);
+        line(270,560,350,560);
+
+        fill(173,216,230);
+        rect(350,520,250,80);
+        fill(0);
+        text("SISTEMI E RETI",420,550,250,80);
+        line(600,560,680,560);
+
+        fill(173,216,230);
+        rect(680,520,250,80);
+        fill(0);
+        text("EDUCAZIONE FISICA",750,550,250,80);
+        line(930,560,1000,560);
+
+
+        fill(173,216,230);
+        rect(1000,520,250,80);
+        fill(0);
+        text("RELIGIONE",1070,550,250,80);
+
+        //lato sinistro
+
+
+        fill(173,216,230);
+        rect(20,290,250,80);
+        fill(0);
+        text("TELECOMUNICAZIONI",80,320,250,80);
+        line(140,370,140,520);
+        line(140,290,140,130);
+
+
+        //lato destro
+
+        fill(173,216,230);
+        rect(1000,290,250,80);
+        fill(0);
+        text("STORIA",1090,320,250,80);
+        line(1150,370,1150,520);
+        line(1150,290,1150,130);
+
+        //centro
+        fill(173,216,230)
+        ellipse(640,310,380,100);
+        fill(0);
+        text("in questa home page troverete tutti i lavori svolti nelle varie materie:",460,310);
+        
+        }
+
+
+      </script>
 
       <style>
-
-        li{
-          list-style-type: disc;
-          color: darkseagreen;
+        h3{
+           text-align: center;
+          color: dodgerblue;
+        }
+        p{
+          color: floralwhite;
         }
       </style>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -35,7 +132,7 @@
                   <a class="nav-link" href="orologio.html" target="_blank">OROLOGIO</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="Softskills.html" target="_blank">SOFT SKILL</a>
+                  <a class="nav-link" href="softskills.html" target="_blank">SOFT SKILL</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="squadra.html" target="_blank" >JUVENTUS</a>
@@ -45,21 +142,9 @@
               </ul>
             </div>
           </nav>
-          <h3>
-            <font color="gold">INTRODUZIONE:</font>
-            <small class="text-muted"><font color="white">in questa home page, troverete tutti i colegamenti ai vari lavori svolti nelle diverse materie.
-              <ol>le materie sono:
-                <li>informatica;</li>
-                <li>matematica;</li>
-                <li>sistemi;</li>
-                <li>T.P.S.;</li>
-                <li>italiano;</li>
-                <li>inglese;</li>
-                <li>storia;</li>
-                <li>religione.</li>
-              </ol>  
-            </font></small>
-          </h3>
+          <h3><strong>HOME PAGE</strong></h3>
+          
+          
           
 
 
